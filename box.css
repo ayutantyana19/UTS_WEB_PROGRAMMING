@@ -4,4 +4,5 @@ div{
     height: 100px;
     background-color: palevioletred;
     margin: 20px auto;
+    border: 5px solid black;
 } 
