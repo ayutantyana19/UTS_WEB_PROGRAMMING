@@ -12,11 +12,13 @@
 
         <script>
             let cursor = document.getElementById("cursor");
-            var color = ["#00FFFF", "#FFE4C4", "#A52A2A"];
-            var i = 0;
+            function random(number){
+                return Math.floor(Math.random()*number)
+            }
+           
             document.onclick = function(){
-                i = i< color.length? ++i:0
-                cursor.style.background = color[i]
+                warna = "rgb("+ random (255)+","+ random (255)+","+ random (255) + ")";
+                cursor.style.background = warna
             }
             document.onmousemove = (event) => {
                 cursor.style.left = event.clientX - (cursor.clientWidth/2) + 'px'; 

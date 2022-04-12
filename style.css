@@ -2,16 +2,16 @@
     height: 100px;
     width: 100px;
     border: solid 5px black;;
-    background-color: aqua;
+    background-color: mediumorchid;
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: lightseagreen;
+    background-color: silver;
     background-size: cover;
     height: 100px;
     display: flex;
-    font-family: "Open sans", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     cursor: pointer;
 }
@@ -24,11 +24,11 @@ body{
 
 #cursor{
     position: fixed;
-    background-color: black;
+    background-color: pink;
     width: 100px;
     height: 100px;
     border: 1px solid black;
-    border: thick solid red;
+    border: thick solid black;
     left: 0;
     top: 0;
     pointer-events: none;
