@@ -1,0 +1,37 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: solid 5px black;;
+    background-color: aqua;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightseagreen;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    font-family: "Open sans", sans-serif;
+    color: black;
+    cursor: pointer;
+}
+.content{
+    width: 900px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#cursor{
+    position: fixed;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border: thick solid red;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1%;
+}
