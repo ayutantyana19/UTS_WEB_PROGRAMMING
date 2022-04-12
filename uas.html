@@ -13,15 +13,18 @@
         <script>
             
             let cursor = document.getElementById("cursor");
-            var color = ["#A63EC5", "#F190B7", "#FBD6D2"];
-            var i = 0;
+            function random(number){
+                return Math.floor(Math.random()*number)
+            }
+           
             document.onclick = function(){
-                i = i< color.length? ++i:0
-                cursor.style.background = color[i]
+                warna = "rgb("+ random (255)+","+ random (255)+","+ random (255) + ")";
+                cursor.style.background = warna
             }
             document.onmousemove = (event) => {
                 cursor.style.left = event.clientX - (cursor.clientWidth/2) + 'px'; 
                 cursor.style.top  = event.clientY - (cursor.clientHeight/2)+ 'px';
+    
             }
         </script>
     </body>   
